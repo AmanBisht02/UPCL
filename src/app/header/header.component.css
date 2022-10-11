@@ -1,0 +1,181 @@
+/* Navigation */
+
+header {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #ffffff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  height: 4rem;
+}
+
+header.logo {
+  font-weight: bolder;
+  font-size: 18px;
+  color: #3fbbc0;
+}
+
+header .navbar ul {
+  margin-bottom: 0;
+}
+
+header .navbar ul {
+  list-style: none;
+}
+
+header .navbar ul li {
+  position: relative;
+  float: left;
+}
+header .navbar ul li a {
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 20px;
+  color: #0a66ab;
+  display: block;
+  text-decoration: none;
+}
+
+header .navbar ul li a:hover {
+  background: #0a66ab;
+  color: #fff;
+}
+
+header .navbar ul li ul {
+  position: absolute;
+  left: 0;
+  width: 200px;
+  background: #fff;
+  display: none;
+}
+
+header .navbar ul li ul li {
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+header .navbar ul li ul li ul {
+  left: 200px;
+  top: 0;
+}
+
+header .navbar ul li:hover > ul {
+  display: initial;
+}
+
+#menu-bar {
+  display: none;
+}
+
+header label {
+  font-size: 20px;
+  color: #0a66ab;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 991px) {
+  header {
+    padding: 20px;
+  }
+
+  header label {
+    display: initial;
+  }
+
+  header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  header .navbar ul li {
+    width: 100%;
+  }
+
+  header .navbar ul li ul {
+    position: relative;
+    width: 100%;
+  }
+
+  header .navbar ul li ul li {
+    background: #eee;
+  }
+
+  header .navbar ul li ul li ul {
+    width: 100%;
+    left: 0;
+  }
+}
+.menu {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .navbar {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+}
+
+/* Top line and marquee */
+
+.top-line {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  background-color: #0a66ab;
+  color: white;
+}
+
+.help-num {
+  margin-left: 2rem;
+  font-size: medium;
+  margin-top: 0.8rem;
+}
+
+/* marquee */
+
+.cssmarquee {
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+}
+
+.cssmarquee p {
+  font-size: 1rem;
+  color: white;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
+  transform: translateX(100%);
+  animation: cssmarquee 20s linear infinite;
+  white-space: nowrap;
+}
+
+.cssmarquee span {
+  padding: 0.1rem 0.5rem;
+  border-radius: 1rem;
+  background-color: red;
+  color: white;
+}
+
+.cssmarquee a {
+  color: white;
+}

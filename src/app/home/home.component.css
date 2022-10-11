@@ -1,0 +1,197 @@
+/* .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  padding: 0 6rem;
+  z-index: 100;
+  background-color: whitesmoke;
+}
+
+.nav--logo {
+  height: 4rem;
+  transition: all 0.3s;
+}
+
+.nav--links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.nav--item {
+  margin-left: 4rem;
+}
+
+.nav--link:link,
+.nav--link:visited {
+  font-size: 1.7rem;
+  font-weight: 400;
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  transition: all 0.3s;
+}
+
+.nav--link--btn:link,
+.nav--link--btn:visited {
+  padding: 0.8rem 2.5rem;
+  border-radius: 3rem;
+  background-color: violet;
+  color: #222;
+}
+
+.nav--link--btn:hover,
+.nav--link--btn:active {
+  color: inherit;
+  background-color: rgb(134, 23, 134);
+  color: #fff;
+} */
+
+/* Main grid container */
+
+.container {
+  max-width: 120rem;
+  height: 65rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+  background-image: url("../../assets/upcl-background.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: none;
+}
+
+.box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.6rem;
+  padding: 1.6rem;
+  justify-items: center;
+  justify-content: center;
+}
+
+.box-item {
+  overflow: hidden;
+  width: 30rem;
+  height: 30rem;
+  background-color: white;
+  border-radius: 0.5rem;
+}
+
+/* marquee */
+
+.cssmarquee {
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+}
+
+.cssmarquee p {
+  font-size: 1rem;
+  color: white;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
+  transform: translateX(100%);
+  animation: cssmarquee 20s linear infinite;
+  white-space: nowrap;
+}
+
+.cssmarquee span {
+  padding: 0.1rem 0.5rem;
+  border-radius: 1rem;
+  background-color: red;
+  color: white;
+}
+
+.cssmarquee a {
+  color: white;
+}
+
+/* Main marquee */
+
+marquee ul {
+  font-size: 1rem;
+  color: green;
+  list-style: none;
+  line-height: 1.3rem;
+  font-weight: bold;
+  font-family: Linearicons-Free;
+  padding: 3rem;
+}
+
+marquee li {
+  margin-bottom: 1.8rem;
+}
+
+marquee svg {
+  width: 0.8rem;
+}
+
+marquee a {
+  color: red;
+}
+
+.mar {
+  margin-top: 0.7rem;
+}
+
+@keyframes cssmarquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+
+/* Main boxes*/
+
+.boxes {
+  display: grid;
+  grid-template-columns: repeat(4, 22rem);
+  row-gap: 3rem;
+  padding: 1.6rem;
+}
+
+.boxes-item {
+  width: 15rem;
+  height: 10rem;
+  justify-self: center;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.boxes-item:hover {
+  box-shadow: -3px 18px 20px 0px rgb(0, 0, 0, 0.5);
+}
+
+.boxes-item svg {
+  display: block;
+  width: 4rem;
+  margin: auto;
+  stroke: #0a66ab;
+}
+
+.box-cont {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.box-cont a {
+  text-decoration: none;
+  color: black;
+}
+
+.box-cont a:hover {
+  color: #4accd1;
+}

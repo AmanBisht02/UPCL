@@ -1,0 +1,42 @@
+.wrapper {
+  padding: 2rem 10rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+}
+
+.box {
+  justify-self: center;
+  height: 25rem;
+  width: 40rem;
+  text-align: center;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  background-color: #0a66ab;
+}
+
+.box-cont {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: left;
+}
+
+.note {
+  font-size: 0.8em;
+  color: #fff;
+}
+
+form {
+  background-color: #fff;
+}
+
+form label {
+  padding: 0.8rem 3rem 1rem 2rem;
+}

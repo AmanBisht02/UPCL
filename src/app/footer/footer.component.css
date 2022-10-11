@@ -1,0 +1,11 @@
+/* Footer */
+
+.footer {
+  background-color: #0a66ab;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.footer a:hover {
+  text-decoration: none;
+}
