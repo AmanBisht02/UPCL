@@ -15,17 +15,18 @@
 
 .Btn1 {
   border: unset;
+  width: 20%;
 
   height: 20%;
   margin: 18px 0px 18px 0px;
+  color: grey;
   background: white;
-  text-decoration: underline;
-  text-decoration-color: #92badd;
   font-weight: bold;
 }
 .hover {
   border: unset;
   width: 31%;
+
   height: 20%;
   /* margin: 10px 0px 18px 18px; */
   background: white;
@@ -34,13 +35,16 @@
 }
 .Btn2 {
   border: unset;
+  width: 20%;
+
   height: 20%;
   margin: 18px 0px 18px 0px;
-  color: grey;
   background: white;
+  text-decoration: underline;
+  text-decoration-color: #92badd;
   font-weight: bold;
 }
-.Btn2:hover {
+.Btn1:hover {
   color: black;
   text-decoration: underline;
   text-decoration-color: #92badd;
@@ -58,23 +62,10 @@ p {
   font-family: Arial Unicode MS, Myriad, ms sans-serif, Helvetica, Arial,
     sans-serif;
 }
-
-.gen-otp {
-  padding: 1rem;
-  background-color: #0070c0;
-  margin-top: 2rem;
-}
-
-.gen-otp:hover {
-  background-color: #39ace7;
-}
-
-.mar-bot {
-  margin-bottom: 0;
-}
-
-.pad {
-  padding-top: 1.5rem;
+.regis {
+  background-color: #fff;
+  padding: 1rem 2rem 2rem 2rem;
+  text-align: center;
 }
 
 .p-logo {
@@ -85,14 +76,16 @@ p {
   stroke: #0070c0;
 }
 
-.i-h-pass {
-  margin-top: 1rem;
+.reg-btn {
+  padding: 1rem;
+  background-color: #0070c0;
 }
 
-.n-user {
-  font-size: 1.2em;
+.reg-btn:hover {
+  background-color: #39ace7;
 }
 
-.fo-we {
+.font-size {
+  font-size: 0.7rem;
   font-weight: 500;
 }

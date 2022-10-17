@@ -195,3 +195,18 @@ marquee a {
 .box-cont a:hover {
   color: #4accd1;
 }
+
+.to-top {
+  position: fixed;
+  width: 32px;
+  height: 32px;
+  bottom: 18%;
+  right: 2%;
+  background: #222;
+  border-radius: 100%;
+  color: #92badd;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 400;
+  border: none;
+}

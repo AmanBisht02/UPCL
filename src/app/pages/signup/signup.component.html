@@ -1,0 +1,129 @@
+<div class="container-fluid slide1" style="height: 72.8vh">
+  <div class="row">
+    <div class="col mx-0 px-0">
+      <div class="row mt-lg-5 mt-2 mb-2 mx-0 px-0 ps-lg-5 px-lg-5">
+        <div class="col-xxl-2"></div>
+        <div class="col-xxl-4 col-lg-6 col-md-5 col-sm-12 ps-5 pe-5 slideIn">
+          <div
+            class="well well-trans w3-content w3-display-container mb-0 px-0 w-100 h-auto"
+            style="box-shadow: 0 30px 60px 0 rgb(0 0 0 / 30%)"
+          >
+            <div class="d-flex justify-content-center mb-2">
+              <button (click)="login()" class="Btn1 fs-6 w-25 mt-3 mb-3">
+                SIGN IN
+              </button>
+              <button class="Btn2 fs-6 w-25 mt-3 mb-3">SIGN UP</button>
+            </div>
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 p-logo"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
+              />
+            </svg>
+
+            <div class="d-flex justify-content-center flex-column">
+              <form #fsignup="ngForm" (ngSubmit)="onSignup(fsignup.value)">
+                <input
+                  style="border: 2px solid #dddbdb"
+                  type="string"
+                  name="phnumber"
+                  class="form-control d-flex m-auto text-center h-100 w-75 p-3 mb-3"
+                  id="exampleFormControlInput1"
+                  placeholder="Enter Your Mobile No. *"
+                  required
+                  ngModel
+                  name="phnumber"
+                />
+                <input
+                  style="border: 2px solid #dddbdb"
+                  type="email"
+                  name="email"
+                  class="form-control d-flex m-auto text-center h-100 w-75 p-3 mb-3"
+                  id="exampleFormControlInput1"
+                  placeholder="Enter Your Email ID *"
+                  required
+                  ngModel
+                  name="email"
+                />
+                <div class="mx-auto">
+                  <button
+                    type="submit"
+                    value="signup"
+                    class="btn btn-primary d-flex mx-auto h-75 w-50 reg-btn"
+                  >
+                    <p class="m-auto">REGISTER</p>
+                  </button>
+                </div>
+              </form>
+            </div>
+
+            <hr />
+
+            <div class="regis d-flex justify-content-center">
+              <button routerLink="/login" class="hover fs-6">
+                Already Registered ?
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-xxl-4 col-lg-6 col-md-5 col-sm-12 font-size">
+          <div
+            class="card shadow-sm bg-white rounded-3"
+            style="
+              background: linear-gradient(to right, #ffcc66 0%, #ffff99 100%);
+            "
+          >
+            <div class="card-body pt-3 pe-4 ps-4 pb-0 fs-8">
+              <h5
+                style="background: #0a66ab; color: white"
+                class="card-title text-center h-100 p-2 font-size mb-3"
+              >
+                Benefits Of Web Portal Registration
+              </h5>
+              <ul class="mb-0">
+                <li class="mb-3">24*7 Bill Payment Facility</li>
+                <li class="mb-3">Detailed Bill Preview / Download</li>
+                <li class="mb-3">5 Year Bill / Payment History</li>
+                <li class="mb-3">Complaint / Service Request Registration</li>
+                <li class="mb-3">Complaint / Request Tracking</li>
+                <li>
+                  Multiple Electricity Account Tracking Using Single Mobile
+                  Number
+                </li>
+              </ul>
+            </div>
+            <div class="card-body pt-2 pe-4 ps-4 pb-0 mt-3">
+              <h5
+                style="background: #0a66ab; color: white"
+                class="card-title text-center h-100 p-2 font-size"
+              >
+                For Registering Complaint Regarding UPCL Online Payment Services
+                :
+              </h5>
+              <ol>
+                <li class="mb-3">
+                  Visit Consumer Login Account On UPCL Website
+                </li>
+                <li class="mb-3">Call @ 1912 / 1800-419-0405</li>
+                <li class="mb-3">Email : Epayment@Upcl.Org</li>
+                <li class="mb-4">
+                  Prerequisite For Online Payment Related Complaints Click Here
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <div class="col-xxl-2"></div>
+      </div>
+    </div>
+  </div>
+</div>

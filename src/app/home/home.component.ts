@@ -1,3 +1,4 @@
+import { supportsScrollBehavior } from '@angular/cdk/platform';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
@@ -13,5 +14,9 @@ export class HomeComponent implements OnInit {
 
   onClick() {
     this.route.navigate(['/new-connection-services']);
+  }
+
+  toTop() {
+    document.body.scrollTop = 0;
   }
 }

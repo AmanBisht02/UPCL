@@ -5,6 +5,7 @@ import { NewConnectionServicesComponent } from './pages/new-connection-services/
 import { ViewReceiptComponent } from './pages/view-receipt/view-receipt.component';
 import { ViewServiceStatusComponent } from './pages/view-service-status/view-service-status.component';
 import { LoginComponent } from './pages/login/login.component';
+import { SignupComponent } from './pages/signup/signup.component';
 import { RegisterForBillAlertsComponent } from './pages/register-for-bill-alerts/register-for-bill-alerts.component';
 import { OtherMiscellaneousPaymentComponent } from './pages/other-miscellaneous-payment/other-miscellaneous-payment.component';
 
@@ -36,6 +37,10 @@ const routes: Routes = [
   {
     path: 'login',
     component: LoginComponent,
+  },
+  {
+    path: 'signup',
+    component: SignupComponent,
   },
   { path: '', pathMatch: 'full', redirectTo: '/home' },
 ];
