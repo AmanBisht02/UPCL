@@ -1,0 +1,47 @@
+.dashboard {
+  height: 78vh;
+  display: grid;
+  grid-template-columns: 0.7fr 3fr;
+}
+
+.section-1 {
+  background: linear-gradient(90deg, #fff 12%, #9cc1ece9 100%, #00d4ff 100%);
+  display: grid;
+  grid-template-columns: 0.2fr 1fr;
+}
+
+.section-1 li:hover {
+  color: #00d4ff;
+  cursor: pointer;
+}
+
+.logos {
+  padding-left: 1rem;
+  margin-top: 2rem;
+  font-size: medium;
+  font-weight: 400;
+  line-height: 3rem;
+  list-style: none;
+  justify-self: center;
+}
+
+.logos svg {
+  stroke: #99abb4;
+}
+
+.section-1 svg {
+  width: 1.5rem;
+}
+
+.sidebar-list {
+  padding-left: 0.3rem;
+  margin-top: 2rem;
+  font-size: medium;
+  font-weight: 400;
+  line-height: 3rem;
+  list-style: none;
+}
+
+.sidebar-list a:hover {
+  color: #00d4ff;
+}

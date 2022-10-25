@@ -1,0 +1,126 @@
+.dashboard {
+  height: 72.9vh;
+  display: grid;
+  grid-template-columns: 0.7fr 3fr;
+}
+
+.section-1 {
+  background: linear-gradient(90deg, #fff 12%, #9cc1ece9 100%, #00d4ff 100%);
+  display: grid;
+  grid-template-columns: 0.2fr 1fr;
+}
+
+.section-1 li:hover {
+  color: #00d4ff;
+  cursor: pointer;
+}
+
+.logos {
+  padding-left: 1rem;
+  margin-top: 2rem;
+  font-size: medium;
+  font-weight: 400;
+  line-height: 3rem;
+  list-style: none;
+  justify-self: center;
+}
+
+.logos svg {
+  stroke: #99abb4;
+}
+
+.section-1 svg {
+  width: 1.5rem;
+}
+
+.sidebar-list {
+  padding-left: 0.3rem;
+  margin-top: 2rem;
+  font-size: medium;
+  font-weight: 400;
+  line-height: 3rem;
+  list-style: none;
+}
+
+.sidebar-list a:hover {
+  color: #00d4ff;
+}
+
+.section-2 {
+  padding: 1rem 2rem;
+}
+
+.section-2 h2 {
+  font-size: 2rem;
+}
+
+.boxes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 3rem;
+  padding: 1.6rem;
+}
+
+.boxes-item {
+  width: 15rem;
+  height: 10rem;
+  justify-self: center;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 1rem;
+  transition: all 0.3s ease-in-out;
+  background: linear-gradient(
+    90deg,
+    #eee5f5 21%,
+    rgba(208, 156, 236, 0.9140698516) 100%
+  );
+  box-shadow: -3px 18px 20px 0px rgb(0, 0, 0, 0.2);
+}
+
+.boxes-item:hover {
+  box-shadow: -3px 18px 20px 0px rgb(0, 0, 0, 0.5);
+  background: linear-gradient(
+    90deg,
+    #e6e5f5 21%,
+    rgba(156, 193, 236, 0.9140698516) 100%,
+    #00d4ff 100%
+  );
+}
+
+.boxes-item svg {
+  display: block;
+  width: 3rem;
+  margin: auto;
+  stroke: #0a66ab;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.box-cont {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.box-cont a {
+  text-decoration: none;
+  color: black;
+}
+
+.box-cont a:hover {
+  color: #0a66ab;
+}
+
+.cont-lt {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 1rem 1rem;
+  justify-content: space-between;
+}
+
+/* .cont-lt-p {
+  justify-self: left;
+} */

@@ -11,7 +11,7 @@ export class SignupComponent implements OnInit {
   constructor(private route: Router, private http: HttpClient) {}
 
   ngOnInit(): void {}
-  login() {
+  signup() {
     this.route.navigate(['/login']);
   }
 

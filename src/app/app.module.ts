@@ -13,6 +13,9 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 // Routing import
 import { AppRoutingModule } from './app-routing.module';
 
+// Special impots
+import { RecaptchaModule } from 'ng-recaptcha';
+
 // Components imports
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -25,6 +28,9 @@ import { OtherMiscellaneousPaymentComponent } from './pages/other-miscellaneous-
 import { RegisterForBillAlertsComponent } from './pages/register-for-bill-alerts/register-for-bill-alerts.component';
 import { LoginComponent } from './pages/login/login.component';
 import { SignupComponent } from './pages/signup/signup.component';
+import { DashboardComponent } from './pages/dashboards/dashboard/dashboard.component';
+import { AdminDashboardComponent } from './pages/dashboards/admin-dashboard/admin-dashboard.component';
+import { AdminLoginComponent } from './pages/login/admin-login/admin-login.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +45,9 @@ import { SignupComponent } from './pages/signup/signup.component';
     RegisterForBillAlertsComponent,
     LoginComponent,
     SignupComponent,
+    DashboardComponent,
+    AdminDashboardComponent,
+    AdminLoginComponent,
   ],
 
   imports: [
@@ -50,6 +59,7 @@ import { SignupComponent } from './pages/signup/signup.component';
     BrowserAnimationsModule,
     FormsModule,
     HttpClientModule,
+    RecaptchaModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

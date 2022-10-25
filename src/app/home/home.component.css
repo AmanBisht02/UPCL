@@ -76,6 +76,16 @@
   height: 30rem;
   background-color: white;
   border-radius: 0.5rem;
+  justify-self: end;
+}
+
+.right-box {
+  overflow: hidden;
+  width: 30rem;
+  height: 30rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  justify-self: start;
 }
 
 /* marquee */
@@ -91,7 +101,7 @@
   color: white;
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 30rem;
   margin: 0;
   line-height: 50px;
   text-align: center;
@@ -116,7 +126,6 @@
 marquee ul {
   font-size: 1rem;
   color: green;
-  list-style: none;
   line-height: 1.3rem;
   font-weight: bold;
   font-family: Linearicons-Free;
@@ -133,10 +142,6 @@ marquee svg {
 
 marquee a {
   color: red;
-}
-
-.mar {
-  margin-top: 0.7rem;
 }
 
 @keyframes cssmarquee {
