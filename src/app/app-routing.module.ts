@@ -11,6 +11,14 @@ import { AdminDashboardComponent } from './pages/dashboards/admin-dashboard/admi
 import { AdminLoginComponent } from './pages/login/admin-login/admin-login.component';
 import { RegisterForBillAlertsComponent } from './pages/register-for-bill-alerts/register-for-bill-alerts.component';
 import { OtherMiscellaneousPaymentComponent } from './pages/other-miscellaneous-payment/other-miscellaneous-payment.component';
+import { UserregComponent } from './pages/dashboards/admin-dashboard/user-master/userreg/userreg.component';
+import { RolemasterComponent } from './pages/dashboards/admin-dashboard/user-master/rolemaster/rolemaster.component';
+import { ManageuserComponent } from './pages/dashboards/admin-dashboard/user-master/manageuser/manageuser.component';
+import { AtreportComponent } from './pages/dashboards/admin-dashboard/report/atreport/atreport.component';
+import { DtreportComponent } from './pages/dashboards/admin-dashboard/report/dtreport/dtreport.component';
+import { ItreportComponent } from './pages/dashboards/admin-dashboard/report/itreport/itreport.component';
+import { PaymentreportComponent } from './pages/dashboards/admin-dashboard/report/paymentreport/paymentreport.component';
+import { CscreportComponent } from './pages/dashboards/admin-dashboard/report/cscreport/cscreport.component';
 
 const routes: Routes = [
   {
@@ -56,6 +64,38 @@ const routes: Routes = [
   {
     path: 'admin-login',
     component: AdminLoginComponent,
+  },
+  {
+    path: 'userreg',
+    component: UserregComponent,
+  },
+  {
+    path: 'rolemaster',
+    component: RolemasterComponent,
+  },
+  {
+    path: 'manageuser',
+    component: ManageuserComponent,
+  },
+  {
+    path: 'atreport',
+    component: AtreportComponent,
+  },
+  {
+    path: 'dtreport',
+    component: DtreportComponent,
+  },
+  {
+    path: 'itreport',
+    component: ItreportComponent,
+  },
+  {
+    path: 'cscreport',
+    component: CscreportComponent,
+  },
+  {
+    path: 'paymentreport',
+    component: PaymentreportComponent,
   },
   { path: '', pathMatch: 'full', redirectTo: '/home' },
 ];

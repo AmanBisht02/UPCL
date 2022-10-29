@@ -67,10 +67,58 @@
     </ul>
 
     <ul class="sidebar-list">
-      <li><a> Dashboard </a></li>
-      <li><a> User Master </a></li>
-      <li><a> Report </a></li>
-      <li><a> CMS </a></li>
+      <li routerLink="/admin-dashboard">Dashboard</li>
+      <li>
+        <button mat-button [matMenuTriggerFor]="usermaster" class="menu-btn">
+          User Master
+        </button>
+        <mat-menu #usermaster="matMenu">
+          <button mat-menu-item routerLink="/userreg" class="menu-opt">
+            User Registration
+          </button>
+          <button mat-menu-item routerLink="/rolemaster" class="menu-opt">
+            Role Master
+          </button>
+          <button mat-menu-item routerLink="/manageuser" class="menu-opt">
+            Manage User
+          </button>
+        </mat-menu>
+      </li>
+      <li routerLink="/report">
+        <button mat-button [matMenuTriggerFor]="report" class="menu-btn">
+          Report
+        </button>
+        <mat-menu #report="matMenu">
+          <button mat-menu-item routerLink="/atreport" class="menu-opt">
+            Abstract Transaction Report
+          </button>
+          <button mat-menu-item routerLink="/dtreport" class="menu-opt">
+            Detail Transaction Report
+          </button>
+          <button mat-menu-item routerLink="/itreport" class="menu-opt">
+            Initiated Transaction Report
+          </button>
+          <button mat-menu-item routerLink="/paymentreport" class="menu-opt">
+            Search Payment Transaction
+          </button>
+          <button mat-menu-item routerLink="/cscreport" class="menu-opt">
+            CSC Report
+          </button>
+        </mat-menu>
+      </li>
+      <li routerLink="/cms">
+        <button mat-button [matMenuTriggerFor]="cms" class="menu-btn">
+          CMS
+        </button>
+        <mat-menu #cms="matMenu">
+          <button mat-menu-item routerLink="/maquee" class="menu-opt">
+            Maquee
+          </button>
+          <button mat-menu-item routerLink="/slider" class="menu-opt">
+            Slider
+          </button>
+        </mat-menu>
+      </li>
     </ul>
   </div>
   <div class="section-2">
