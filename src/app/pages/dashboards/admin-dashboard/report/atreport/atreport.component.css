@@ -240,6 +240,7 @@
 }
 
 .example-form-field {
-  width: 10rem;
-  margin-right: 20px;
+  width: 15rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
 }

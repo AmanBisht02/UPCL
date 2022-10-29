@@ -231,3 +231,8 @@
 .menu-opt:first-child {
   color: #00d4ff;
 }
+
+.select {
+  align-self: center;
+  width: 24rem;
+}
